@@ -99,7 +99,7 @@ var sheetrange = { //寫入的範圍
     },
     yahootID: {
         gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
-        gname: '梓原!',
+        gname: 'yahoo!',
         col: {
             oid: 'B', //訂單編號
             oname: 'C', //姓名
@@ -121,7 +121,7 @@ var sheetrange = { //寫入的範圍
     },
     shopeeID: {
         gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
-        gname: '訂單明細!',
+        gname: 'shopee!',
         col: {
             oid: 'B', //訂單編號
             oname: 'C', //姓名
@@ -186,8 +186,8 @@ var sheetrange = { //寫入的範圍
         }
     },
     pchometID: {
-        gid: '1NzSk2lwQ456eflqdnKwWWRy6ZIZsbf5Bj0BGcxcjqSI',
-        gname: '梓原!',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
+        gname: 'pchome!',
         col: {
             oid: 'B', //訂單編號
             oname: 'C', //姓名
@@ -208,8 +208,8 @@ var sheetrange = { //寫入的範圍
         }
     },
     RutenID: {
-        gid: '1vt6bzGSpS8StKdWbIk7gi_dtJ7w1OBIOODiA0eVFARw',
-        gname: '工作表1!',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
+        gname: 'ruten!',
         col: {
             oid: 'B', //訂單編號
             oname: 'D', //姓名
@@ -230,8 +230,8 @@ var sheetrange = { //寫入的範圍
         }
     },
     songuoID: {
-        gid: '12HcyDkrHWGG2w1hJIjM1tk7BQqi2-HumCQehwuah0ro',
-        gname: '工作表1!',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
+        gname: 'pcone!',
         col: {
             oid: 'B', //訂單編號
             oname: 'C', //姓名
@@ -252,7 +252,7 @@ var sheetrange = { //寫入的範圍
         }
     },
     buy123ID: {
-        gid: '1snj6VvwDoMel448xnLlPCWwECTxkEs4sl5OfEWlezJs',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
         gname: '工作表1!',
         col: {
             oid: 'C', //訂單編號
