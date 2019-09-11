@@ -1,7 +1,7 @@
 var sheetrange = { //寫入的範圍
     resStock: {
-        gid: '19ZXwhENPrLmLURoKO4xXoCDahpyMG5wuU_8xsU74kyI',
-        gname: '工作表1!',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
+        gname: 'product!',
         col: {
             piso: 'B', //ISO
             pname: 'C', //產品名稱
