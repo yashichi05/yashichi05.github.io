@@ -10,7 +10,7 @@ var sheetrange = { //寫入的範圍
         }
     },
     facebookID: {
-        gid: '1f36qa112A6stUaFV94SYs-IIs13n6_mATzm_CPB-_IQ',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
         gname: 'FB!',
         col: {
             oid: '', //訂單編號
@@ -32,7 +32,7 @@ var sheetrange = { //寫入的範圍
         }
     },
     yahooID: {
-        gid: '1DX4rBZ55EnP8-Falc1mxYiS487MhualwAohmv_d07HI',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
         gname: '大航家!',
         col: {
             oid: 'B', //訂單編號
@@ -54,7 +54,7 @@ var sheetrange = { //寫入的範圍
         }
     },
     LINEID: {
-        gid: '1NwTr2_GNxBEQjZDDYiiT_SkUV9e-8i58qhNHA20_RyE',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
         gname: '工作表1!',
         col: {
             oid: 'B', //訂單編號
@@ -76,7 +76,7 @@ var sheetrange = { //寫入的範圍
         }
     },
     FacebookID: {
-        gid: '1f36qa112A6stUaFV94SYs-IIs13n6_mATzm_CPB-_IQ',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
         gname: 'FB!',
         col: {
             oid: 'A', //訂單編號
@@ -98,7 +98,7 @@ var sheetrange = { //寫入的範圍
         }
     },
     yahootID: {
-        gid: '1DX4rBZ55EnP8-Falc1mxYiS487MhualwAohmv_d07HI',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
         gname: '梓原!',
         col: {
             oid: 'B', //訂單編號
@@ -120,7 +120,7 @@ var sheetrange = { //寫入的範圍
         }
     },
     shopeeID: {
-        gid: '1nplThOG2vqcdia3Uht1Niv9oW7sfhU2YpbbBPDwmlcc',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
         gname: '訂單明細!',
         col: {
             oid: 'B', //訂單編號
@@ -142,7 +142,7 @@ var sheetrange = { //寫入的範圍
         }
     },
     shopee_bigID: {
-        gid: '1nplThOG2vqcdia3Uht1Niv9oW7sfhU2YpbbBPDwmlcc',
+        gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
         gname: '大航家!',
         col: {
             oid: 'B', //訂單編號

@@ -18,15 +18,11 @@
         <button class="btn btn-outline-secondary" @click="applychk">勾選隱藏</button>
         <button class="btn btn-outline-secondary" @click="allshow">全部顯示</button>
         <button class="btn btn-outline-secondary" @click="doit('yahoot')">雅虎梓原</button>
-        <button class="btn btn-outline-secondary" @click="doit('yahoo')">雅虎大航家</button>
         <button class="btn btn-outline-secondary" @click="doit('shopee')">蝦皮</button>
-        <button class="btn btn-outline-secondary" @click="doit('shopee_big')">蝦皮-大航家</button>
         <button class="btn btn-outline-secondary" @click="doit('pchomet')">PC梓原</button>
         <button class="btn btn-outline-secondary" @click="doit('Ruten')">露天</button>
         <button class="btn btn-outline-secondary" @click="doit('songuo')">松果</button>
         <button class="btn btn-outline-secondary" @click="doit('buy123')">生活</button>
-        <button class="btn btn-outline-secondary" @click="doit('LINE')">Line</button>
-        <button class="btn btn-outline-secondary" @click="doit('Facebook')">臉書</button>
         <input class="odrchkbox form-control-sm" v-model="rdate" type="date">
     </div>
     <div v-if="ov.applychkdisplay" v-for="(ov,oindex) in allorder" class="" style="border:3px solid #000;font-size: 24px; width:1200px;page-break-inside:avoid;margin-bottom:20px;padding-bottom:10px;">
@@ -61,5 +57,5 @@
 
 
 <footer>
-    <script src="printOrder.js"></script>
+    <script src="files/printOrder.js"></script>
 </footer>
