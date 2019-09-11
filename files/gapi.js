@@ -33,7 +33,7 @@ var sheetrange = { //寫入的範圍
     },
     yahooID: {
         gid: '1o14isxIEJIzNOraSgDbR0eGZqzRFSKpncFZM1C7cTCA',
-        gname: '大航家!',
+        gname: 'yahoo!',
         col: {
             oid: 'B', //訂單編號
             oname: 'C', //姓名
