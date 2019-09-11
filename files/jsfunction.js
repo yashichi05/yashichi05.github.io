@@ -150,7 +150,7 @@ var buttonevent = new Vue({ //按鈕事件 //送出時檢查 訂單金額是否�
                     SGproductsType = SGproductsType + "\n" + productlist.products[i].productType + "*" + productlist.products[i].productCount
                 };
                 var aryV = [];
-                aryV.push([this.todayDate(), webform.orderID, webform.orderCustomer, "'" + webform.orderTel, SGproductsISO, SGproductsName, SGproductsType, "",webform.SGcount + "入", webform.SGcountC, webform.SGPrice, webform.orderFee, webform.orderDiscount, webform.orderPrice]);
+                aryV.push([this.todayDate(), webform.orderID, webform.orderCustomer, "'" + webform.orderTel, SGproductsISO, SGproductsName, SGproductsType, webform.SGcountC,webform.SGcount + "入", webform.SGPrice, webform.orderFee, webform.orderDiscount, webform.orderPrice]);
 
 
                 //////執行送出
