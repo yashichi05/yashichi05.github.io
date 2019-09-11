@@ -838,6 +838,7 @@ function takeprdapi(takecol) {
         for (var i = 0; i < takeColAry.length; i++) {
             wrColAry.push([takeColAry[i]])
         }
+        console.log(wrColAry)
         writesheetrange(sheetrange.resStock.gid, sheetrange.resStock.gname + takecol + "1", wrColAry) //寫入資料
         $("#errordiv").append("<br>完成")
 
