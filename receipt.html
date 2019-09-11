@@ -1,0 +1,36 @@
+<style>
+    input[type=date]::-webkit-inner-spin-button { visibility: hidden; }
+    input[type=date]::-webkit-clear-button {display: none;}
+</style>
+
+<div id="receiptdiv" class="m-auto" style="width:620px;">
+    <div class="mb-2 d-flex justify-content-center">
+        <!--            按鈕執行 v為平台名稱  OI為訂單編號所在欄位 ON訂單客人欄數 rn發票欄位 op訂單金額欄數 rnc 發票欄位(打字母)-->
+        
+        <button class="btn btn-outline-secondary" @click="whichbutton('yahoot','2','3','16','15','P')">雅虎梓原</button>
+        <button class="btn btn-outline-secondary" @click="whichbutton('shopee','2','3','15','14','O')">蝦皮</button>
+        <button class="btn btn-outline-secondary" @click="whichbutton('pchomet','2','3','1４','1３','Ｎ')">PC梓原</button>
+        <button class="btn btn-outline-secondary" @click="whichbutton('Ruten','2','3','15','14','O')">露天</button>
+        <button class="btn btn-outline-secondary" @click="whichbutton('songuo','2','3','14','13','N')">松果</button>
+        <input class="form-control-sm" v-model="rdate" type="date">
+    </div>
+    <div class="mb-3" v-if="activebtn">
+        <button class="btn btn-sm" @click="outputNumber">送出發票</button>
+        <button class="btn btn-sm" @click="outputNumber('Y')" v-if="sgbtn">送出貨運(松果)</button>
+    </div>
+    <div class="table">
+        <div is="receipt-input" :oreder="v.id" :name="v.name" :rn="v.receiptNumber" :price="v.price" :orderindex="i" v-for="(v,i) in orders"></div>
+    </div>
+</div>
+
+
+
+
+
+
+<footer>
+
+    <script src="receiptJS.js"></script>
+
+
+</footer>
