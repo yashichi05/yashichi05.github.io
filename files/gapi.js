@@ -275,8 +275,8 @@ var sheetrange = { //寫入的範圍
     }
 }
 
-var CLIENT_ID = '830462167717-2hh5u6k5fo2iuscsfohas2fide5n9g24.apps.googleusercontent.com';
-var API_KEY = 'AIzaSyBj8xjZ75lF9oEirYXbEQA-pyJcZKgkHgE';
+var CLIENT_ID = '490077701249-qh7t0ltba6003ngpcr6t7tph9h3co1l3.apps.googleusercontent.com';
+var API_KEY = 'AIzaSyCWrJC3oWP-o3QymnaTrdnn__2wTxhaXMs';
 var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
 var SCOPES = "https://www.googleapis.com/auth/spreadsheets";
 
