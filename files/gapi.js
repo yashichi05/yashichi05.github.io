@@ -612,9 +612,9 @@ function printporductslist(col) { //
             }
         }
         var nan_val
-        for(var i =0;i<aryL.length;i++){
-            
-            if (aryL[i][16] == nan_val){
+        for (var i = 0; i < aryL.length; i++) {
+
+            if (aryL[i][16] == nan_val) {
                 aryL[i][16] = '?'
             }
         }
@@ -828,6 +828,8 @@ function takeprdapi(takecol) {
             if (isorow == -1) {
                 $("#errordiv").append("<br>" + takeprd.isoAry[i] + '  錯誤')
             } else {
+
+                console.log(takeColAry[isorow], takeprd.countAry[i])
                 takeColAry[isorow] = Number(takeColAry[isorow]) + Number(takeprd.countAry[i]) //變更已取貨數量
             }
         }
@@ -838,7 +840,6 @@ function takeprdapi(takecol) {
         for (var i = 0; i < takeColAry.length; i++) {
             wrColAry.push([takeColAry[i]])
         }
-        console.log(wrColAry)
         writesheetrange(sheetrange.resStock.gid, sheetrange.resStock.gname + takecol + "1", wrColAry) //寫入資料
         $("#errordiv").append("<br>完成")
 
