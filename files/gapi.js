@@ -829,7 +829,6 @@ function takeprdapi(takecol) {
                 $("#errordiv").append("<br>" + takeprd.isoAry[i] + '  錯誤')
             } else {
 
-                console.log(takeColAry,isorow)
                 takeColAry[isorow] = Number(takeColAry[isorow]) + Number(takeprd.countAry[i]) //變更已取貨數量
             }
         }
