@@ -354,7 +354,7 @@ var webform = new Vue({ //訂單客人資料
     el: '#orderform',
     data: {
         gsheetcol: 'L', //庫存表存取欄位
-        orderID_display: false,
+        orderID_display: true,
         orderAccount_display: true,
         orderDiscount_display: true,
         orderFeeCredit_display: false,
