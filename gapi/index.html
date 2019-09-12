@@ -16,7 +16,7 @@
             $('#getsomething').animate({
                 opacity: '0'
             }, 100, function() {
-                var htmlobj = eval('$.ajax({url: "/' + word + '",async: false});')
+                var htmlobj = eval('$.ajax({url: "/gapi/' + word + '",async: false});')
                 $("#getsomething").html(htmlobj.responseText);
             });
             $('#getsomething').animate({
