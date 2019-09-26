@@ -29,7 +29,7 @@
         setTimeout(function () {
             $(".img1").fadeIn(3000)
         }, 2000)
-        
+
 
     })
     $(".bar").hover(function () {
@@ -43,10 +43,10 @@
     function barbig(movexy) {
 
         if ($(".bar").css("width") == "50px" && movexy != moved()) {
-            $('html, body').css({
-                overflow: 'hidden',
-                height: '100%'
-            });
+            //            $('html, body').css({
+            //                overflow: 'hidden',
+            //                height: '100%'
+            //            });
 
             $(".icon").velocity({
                 height: "100px",
@@ -155,10 +155,10 @@
                     $(".barback").animate({
                         width: "0%"
                     }, 300, "swing", function () {
-                        $('html, body').css({
-                            overflow: 'auto',
-                            height: 'auto'
-                        });
+                        //                        $('html, body').css({
+                        //                            overflow: 'auto',
+                        //                            height: 'auto'
+                        //                        });
 
                     });
                 });
@@ -175,31 +175,40 @@
             scrollTop: targetoffset
         }, 1500);
         barsmall();
+    });
+    $('a[href="#work"]').click(function () {
+        var targetoffset = $("#work").offset().top;
+        $("body,html").animate({
+            scrollTop: targetoffset
+        }, 1500);
+        barsmall();
     })
     $(document).scroll(function () {
         if ($("html").scrollTop() > 300) {
-
-            $('.img3').velocity({
+            $('.carddivin').velocity({
                 opacity: "1"
 
             }, {
-                duration: 2000
+                duration: 500
             });
+
             setTimeout(function () {
-                $('.img2').velocity({
+                $('.img4').velocity({
+                    opacity: "1"
+
+                }, {
+                    duration: 2000
+                });
+            }, 1000);
+
+
+            setTimeout(function () {
+                $('.card-body').velocity({
                     opacity: "1"
                 }, {
                     duration: 2000
                 });
-            }, 1000)
-            
-            setTimeout(function () {
-                $('.indiv h4').velocity({
-                    opacity: "1"
-                }, {
-                    duration: 2000
-                });
-            }, 1500)
+            }, 2500);
 
         }
     });

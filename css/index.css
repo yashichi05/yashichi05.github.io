@@ -14,6 +14,7 @@ html {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .bar {
@@ -99,9 +100,50 @@ a {
 }
 
 .content1 {
-    align-items: flex-end;
+    align-items: center;
 }
 
+.carddiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.row {
+
+
+    display: flex;
+}
+
+.img4 {
+    width: 300px;
+    height: 300px;
+    background: url("../img/colour-1885352_1920.jpg") no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+.card-body{
+    color: #fff;
+    padding: 45px;
+    padding-top: 20px;
+    opacity: 0;
+}
+.carddivin{
+    border: 1px solid #fff;
+    opacity: 0;
+}
+.text-muted{
+    border: 1px solid #fff;
+    margin: 6px;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+.card-title{
+    font-size: 18px;
+    
+}
 .firstcontent {
     align-items: center;
 }
@@ -157,7 +199,7 @@ section:nth-child(3) {
 }
 
 .img1 {
-    color: #000;
+    color: #fff;
     font-size: 48px;
     opacity: 1;
     display: none;
@@ -183,7 +225,7 @@ section:nth-child(3) {
 }
 
 .out {
-    background: #f8e9d6;
+    background: #000;
     /*    background: url("../img/background.jpg") no-repeat;*/
     background-attachment: fixed;
     background-size: auto;
