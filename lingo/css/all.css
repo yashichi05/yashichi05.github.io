@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");*{font-family:'Noto Sans TC',sans-serif;letter-spacing:3px;font-size:14px}
+h1{font-size:36px}h2{font-size:27px}h3{font-size:22px}h4{font-size:18px}h5{font-size:14px}
+h6{font-size:10px}hr{margin:0;margin-bottom:1em;border-top:2px solid gray}@media(max-width:1024px){*{letter-spacing:5px;font-size:16px}
+h3{font-weight:900}}.container-fluid{padding-left:0;padding-right:0;position:relative}
+.container-fluid .row{margin:0}.container-fluid .shopname{width:100px;height:35px;background:url("../img/logo_name.png") no-repeat center center;background-size:contain;text-shadow:0 0 5px rgba(0,0,0,0.7);z-index:999;color:white;position:absolute;top:0;font-weight:900;left:50%;transform:translateX(-67%)}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px white;background-color:#f5f5f5}
+::-webkit-scrollbar{width:12px;background-color:#f5f5f5}::-webkit-scrollbar-thumb{border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(255,255,255,0.3);background-color:rgba(252,186,39,0.3)}
+#navbar a{color:gray;padding-right:14px;padding-left:14px}@media(max-width:1024px){#navbar .navbar-brand{display:block !important}
+#navbar .navlogo{display:none !important}#navbar ul li{direction:rtl}}.container-fluid.about{padding-left:130px}
+.container-fluid.about .left_bg{width:130px;height:100vh;left:0;bottom:0;z-index:-1;background-color:#fcba27}
+.container-fluid.about_content2 .row .about2_Lbg{width:75%;height:900px;background-color:#fcba2720;left:0;top:0}
+.container-fluid.about_content2 .row .about2_Rbg{width:60%;height:50px;background-color:#fcba2720;right:0;bottom:0}
+.container-fluid.about_content2 .row section .col-7{padding:0}.container-fluid.about_content2 .row section .col-5{padding:0}
+.container-fluid.about_content2 .row section .textdiv{padding:20px;max-width:300px}
+.container-fluid.about_content2 .row section .imgdiv{width:300px}.container-fluid.about_content2 .row section .imgdiv.borderimg{background-color:white}
+.container-fluid.about_content2 .row section .imgdiv img{max-width:100%}.container-fluid.about_content2 .row section .imgdiv h3{opacity:0}
+@media(min-width:1600px){.container-fluid.about_content2 .about2_Lbg{width:63% !important}
+}.container-fluid.about_content1 section .col-7{padding:0}.container-fluid.about_content1 section .col-4{padding:0}
+.container-fluid.about_content1 section .textdiv{padding:20px}.container-fluid.about_content1 section .imgdiv img{max-width:100%}
+.container-fluid.about_content1 section .imgdiv h3{opacity:0}.container-fluid.about_content1 section .imgdiv hr{border-top:2px solid white}
+.container-fluid.about_content1 .even .imgdiv div{right:0}.container-fluid.about_content1 .even .textdiv{padding-left:0}
+.container-fluid.about_content1 .even .textdiv h3,.container-fluid.about_content1 .even .textdiv p{padding-left:20px}
+.container-fluid.about_content1 .odd .textdiv{padding:0}.container-fluid.about_content1 .odd .textdiv h3,.container-fluid.about_content1 .odd .textdiv p{padding-right:20px}
+.container-fluid.about_content3 section{height:100vh;min-height:500px;overflow:hidden;background:url("../img/about3_bg.jpg") no-repeat center center;background-size:1920px auto}
+.container-fluid.about_content3 section .rectOut{width:100%;height:320px;background-color:#fff;background:url("../img/about3_bg.jpg") no-repeat center center;background-size:1920px auto;position:relative}
+.container-fluid.about_content3 section .rectOut .rectIn{width:100%;height:100%;background:url("../img/about3_bg.jpg") no-repeat center center;background-size:1920px auto;filter:blur(10px)}
+.container-fluid.about_content3 section .rectOut .rectBg{width:100%;height:100%;background-color:#fff;opacity:.3;z-index:2}
+.container-fluid.about_content3 section .rectOut .rectBgIn{width:500px;height:280px;border:2px solid #fff;opacity:.5}
+.container-fluid.about_content3 section .rectOut .rectText{color:white;z-index:999;width:450px}
+.container-fluid.about_content3 section .rectOut .rectText h3{text-shadow:0 0 5px rgba(0,0,0,0.5)}
+.container-fluid.about_content3 section .rectOut .rectText h3 span{font-size:22px;font-weight:bold}
+@media(max-width:1024px){.container-fluid.about{padding-left:0}.container-fluid.about .imgdiv{padding:0}
+.container-fluid.about .odd .textdiv{padding-left:20px}.about_content3 section{background-size:1024px auto}
+.about_content3 section .rectOut{width:100% !important;height:100% !important;background-size:1024px auto}
+.about_content3 section .rectOut .rectIn{filter:blur(2px);height:100% !important;width:100%;background-size:1024px auto}
+.about_content3 section .rectOut .rectText{width:90% !important;padding-top:20px}
+.about_content3 section .rectOut .rectBgIn{height:310px !important;width:100% !important;background-color:#fff;opacity:.2 !important;border:0}
+.about_content3 section .rectOut .rectBg{height:350px !important;width:100%;opacity:.1 !important}
+.about_content2 .imgdiv{width:100% !important}.about_content2 .textdiv{max-width:100% !important}
+.about_content2 .about2_Rbg{width:80% !important;height:300px !important;background-color:#fcba2720;right:0;bottom:0}
+}.leftnav{width:130px;position:absolute;background-color:#fcba27;top:0;padding-top:120px;z-index:999}
+.leftnav .link{margin-bottom:50px}.leftnav .link a{color:white;text-decoration:none}
+.container-fluid.pan_c,.container-fluid.dessert_c{padding-left:130px;padding-top:35px}
+.container-fluid.pan_c .left_bg,.container-fluid.dessert_c .left_bg{width:130px;height:100vh;left:0;bottom:0;z-index:-1;background-color:#fcba27}
+.container-fluid.pan_c section .col-lg-7,.container-fluid.dessert_c section .col-lg-7{padding:0}
+.container-fluid.pan_c section .col-lg-5,.container-fluid.dessert_c section .col-lg-5{padding:0}
+.container-fluid.pan_c section .textdiv,.container-fluid.dessert_c section .textdiv{padding:20px}
+.container-fluid.pan_c section .imgdiv img,.container-fluid.dessert_c section .imgdiv img{width:100%;min-width:100%}
+.container-fluid.pan_c section .imgdiv h3,.container-fluid.dessert_c section .imgdiv h3{opacity:0}
+.container-fluid.pan_c section .imgdiv hr,.container-fluid.dessert_c section .imgdiv hr{border-top:2px solid white}
+.container-fluid.pan_c .even .imgdiv div,.container-fluid.dessert_c .even .imgdiv div{right:0}
+.container-fluid.pan_c .even .textdiv,.container-fluid.dessert_c .even .textdiv{padding-left:0}
+.container-fluid.pan_c .even .textdiv h3,.container-fluid.pan_c .even .textdiv p,.container-fluid.dessert_c .even .textdiv h3,.container-fluid.dessert_c .even .textdiv p{padding-left:20px}
+.container-fluid.pan_c .odd .textdiv,.container-fluid.dessert_c .odd .textdiv{padding-right:0}
+.navbar-brand{display:none}@media(max-width:1024px){.leftnav{display:none}hr,.left_bg,.shopname{display:none}
+.container-fluid.pan_c,.container-fluid.dessert_c{padding-left:0;padding-top:0}.container-fluid.pan_c .col-12,.container-fluid.dessert_c .col-12{padding:0}
+.leftnav.about{width:100%;height:70px;top:100px;display:flex;padding-top:0;justify-content:space-around;align-items:center;overflow:auto;position:static}
+.leftnav.about .link{margin-bottom:0}.leftnav.about .link p{display:none}.leftnav.about .link img{width:50px}
+}section.site{height:100vh;min-height:500px;overflow:hidden;background:url("../img/site_bg.jpg") no-repeat center center;background-size:1920px auto}
+section.site .rectOut{width:740px;height:320px;background-color:#fff;background:url("../img/site_bg.jpg") no-repeat center center;background-size:1920px auto;position:relative}
+section.site .rectOut .rectIn{width:100%;height:100%;background:url("../img/site_bg.jpg") no-repeat center center;background-size:1920px auto;filter:blur(10px)}
+section.site .rectOut .rectBg{width:100%;height:100%;background-color:#fff;opacity:.3;z-index:2}
+section.site .rectOut .rectBgIn{width:700px;height:280px;border:2px solid #fff;opacity:.5}
+section.site .rectOut .rectText{color:white;z-index:999;width:650px}section.site .rectOut .rectText img{border-radius:10px}
+section.site .rectOut .rectText p{text-shadow:0 0 5px rgba(0,0,0,0.5)}section.site .rectOut .rectText p span{font-size:22px;font-weight:bold}
+@media(max-width:1024px){section.site{background-size:1024px auto}section.site .rectOut{width:100%;height:100% !important;background-size:1024px auto}
+section.site .rectOut .rectIn{filter:blur(2px);height:100% !important;width:100%;background-size:1024px auto}
+section.site .rectOut .rectText{width:90% !important;padding-top:20px}section.site .rectOut .rectBgIn{height:310px !important;width:100%;background-color:#fff;opacity:.2 !important;border:0}
+section.site .rectOut .rectBg{height:350px !important;width:100%}}
