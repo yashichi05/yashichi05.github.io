@@ -15,7 +15,8 @@ h3{font-weight:900}}.container-fluid{padding-left:0;padding-right:0;position:rel
 .container-fluid.about_content2 .row section .imgdiv{width:300px}.container-fluid.about_content2 .row section .imgdiv.borderimg{background-color:white}
 .container-fluid.about_content2 .row section .imgdiv img{max-width:100%}.container-fluid.about_content2 .row section .imgdiv h3{opacity:0}
 @media(min-width:1600px){.container-fluid.about_content2 .about2_Lbg{width:63% !important}
-}.container-fluid.about_content1 section .col-7{padding:0}.container-fluid.about_content1 section .col-4{padding:0}
+}.container-fluid.about_content1 section .col-7,.container-fluid.about_content1 section .col-lg-7{padding:0}
+.container-fluid.about_content1 section .col-4,.container-fluid.about_content1 section .col-lg-7{padding:0}
 .container-fluid.about_content1 section .textdiv{padding:20px}.container-fluid.about_content1 section .imgdiv img{max-width:100%}
 .container-fluid.about_content1 section .imgdiv h3{opacity:0}.container-fluid.about_content1 section .imgdiv hr{border-top:2px solid white}
 .container-fluid.about_content1 .even .imgdiv div{right:0}.container-fluid.about_content1 .even .textdiv{padding-left:0}
