@@ -48,6 +48,23 @@
 
 
 <body>
+  <div id="layout_search" class="position-absolute">
+  <div id="search-tool">
+    <div class="search-header mb-4">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+            <input class="form-control" autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋"
+                spellcheck="false" type="text" id="search-input">
+        </div>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+    </div>
+    <div id="search-result" class="shadow-lg mb-5 bg-white rounded position-absolute"></div>
+</div>
+  </div>
   <div class="fjax_input">
 <!-- Page Header -->
 
@@ -80,7 +97,7 @@
           <!-- Date -->
           <span class="date-time info">於
             <span class="date">2019-10-31</span>
-            <span class="time">14:20:37</span>
+            <span class="time">23:11:47</span>
           </span>
           
           <!--  Categories  -->
@@ -102,18 +119,15 @@
         
         <!-- Post Main Content -->
         <div class="post-content">
-          
+          <h2 id="im-dio"><a href="#im-dio" class="headerlink" title="im dio"></a>im dio</h2><blockquote>
+<p>ddddddddddd</p>
+</blockquote>
+
         </div>
       </div>
       
       <div class="col-md-2  border-left border-secondary">
           
-<div id="site_search">
-        <div class="form-group">
-         <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control">
-        </div>  
-       <div id="local-search-result"></div>
-       </div>
 <ul class="rightNav d-flex d-md-block flex-wrap">
 
     
@@ -180,7 +194,7 @@
   </div>
 </article>
 </div>
-
+  
   <!-- Footer -->
 <footer>
   <div class="container">
@@ -189,10 +203,12 @@
         <p class="copyright text-muted">
           <!-- Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
           Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a> -->
+          
+          <p>GitHub:<a target="_blank" href="https://github.com/yashichi05">https://github.com/yashichi05</a></p>
           <p class="copyright text-muted">
-            Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
-          </p>
-      </div>
+              <a target="_blank" href="https://hexo.io/">Hexo.</a> 框架製作
+            </p>
+        </div>
     </div>
   </div>
 
@@ -203,6 +219,8 @@
 <script src="/hexo/js/highlight.pack.js"></script>
 <script src="/hexo/js/bootstrap.min.js"></script>
 <script src="/hexo/js/cus.js"></script>
+
+
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
     var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
@@ -210,6 +228,9 @@
       hljs.highlightBlock(block);
     });
   });
+  var CONFIG = {localsearch:JSON.parse('{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}'),
+    path:"search.json",
+    root:"/hexo/"}
 </script>
 
 

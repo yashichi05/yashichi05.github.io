@@ -752,3 +752,54 @@ footer {
     font-size: 0.875rem;
   }
 }
+#search-result {
+  width: 80vw;
+  right: 50%;
+  transform: translateX(50%);
+  top: 45px;
+}
+#search-result a {
+  color: #000;
+}
+#search-result b {
+  color: #f00;
+}
+#search-result ul {
+  padding: 0.625rem;
+}
+#search-result li {
+  padding: 0.625rem;
+  padding-bottom: 0.3125rem;
+}
+#search-result a:hover {
+  background: none;
+}
+#search-result li:hover {
+  background: #007bff;
+  color: #fff;
+}
+#no-result li:hover p {
+  color: #fff;
+}
+#no-result li {
+  padding-bottom: 0.625rem;
+}
+#search-result p {
+  color: #808080;
+}
+#search-result li:hover a {
+  color: #fff;
+}
+.search-result-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.search-result {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+#layout_search {
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%);
+}
