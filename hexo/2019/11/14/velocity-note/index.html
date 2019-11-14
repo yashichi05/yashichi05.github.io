@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="學習筆記"/>
+  <meta property="og:title" content="velocity note"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="學習筆記"/>
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:image" content="http://yashichi05.github.io/hexo"/>
   
     <link rel="alternate" href="/atom.xml" title="學習筆記" type="application/atom+xml">
@@ -65,9 +65,8 @@
     <div id="search-result" class="shadow-lg mb-5 bg-white rounded position-absolute"></div>
 </div>
   </div>
-  <!-- Archive Header -->
-<div class="fjax_input">
-  <!-- Page Header -->
+  <div class="fjax_input">
+<!-- Page Header -->
 
 <a href="/hexo/">
 <header class="site-header header-background" style="background-image: url(/hexo//img/default-banner-dark.jpg)">
@@ -75,7 +74,7 @@
     <div class="row">
       <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
         <div class="page-title with-background-image">
-          <p class="title">筆記列表</p>
+          <p class="title">velocity note</p>
           <p class="subtitle"></p>
         </div>
         <!-- <div class="site-menu with-background-image">
@@ -88,10 +87,37 @@
   </div>
 </header>
 </a>
-  <!-- Archive List -->
-  <div class="container">
-      <div class="row">
-        <div class="col-12 d-md-none">
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="post-info text-muted">
+          
+          <!-- Date -->
+          <span class="date-time info">於
+            <span class="date">2019-11-14</span>
+            <span class="time">18:04:12</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <blockquote>
+<p>velocity 的easing 壞掉了</p>
+</blockquote>
+<h5 id="velocity-easing"><a href="#velocity-easing" class="headerlink" title="velocity easing"></a>velocity easing</h5><p><a href="https://github.com/yuichiroharai/easeplus-velocity" target="_blank" rel="noopener">https://github.com/yuichiroharai/easeplus-velocity</a></p>
+<h5 id="velocity"><a href="#velocity" class="headerlink" title="velocity"></a>velocity</h5><blockquote>
+<p>$(“.squ5”).velocity({CSS},{ option });<br>$(“.squ5”).velocity({transform:[“rotateZ(100deg)”, “rotateZ(10deg)”],width: 20},{ duration: 3000 });<br>transform:[變化值, 初值]<br>width: 20 //變化值</p>
+<p>$element.velocity({<br>    width: “500px”,<br>    property2: value2<br>}, {<br>    /* Velocity’s default options */<br>    duration: 400,<br>    easing: “swing”,<br>    queue: “”,<br>    begin: undefined,<br>    progress: undefined,<br>    complete: undefined,<br>    display: undefined,<br>    visibility: undefined,<br>    loop: false,<br>    delay: false,<br>    mobileHA: true<br>});</p>
+</blockquote>
+
+        </div>
+      </div>
+      
+      <div class="col-md-2  border-left border-secondary">
           
 <ul class="rightNav d-flex d-md-block flex-wrap">
 
@@ -140,164 +166,9 @@
     
 </ul>
         </div>
-      </div>
-    <div class="row">
-      <div class="col-md-10">
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/javascript-note/" class="post-title">
-    javascript note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:50:09</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/js-%E7%89%A9%E4%BB%B6/" class="post-title">
-    js 物件
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:47:57</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/sass-note/" class="post-title">
-    sass note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:43:51</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/velocity-note/" class="post-title">
-    velocity note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:40:35</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/jquery-note/" class="post-title">
-    jquery note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:40:11</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/bootstrap-%E5%B8%B8%E7%94%A8class/" class="post-title">
-    bootstrap 常用class
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:39:38</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/css/" class="post-title">
-    css
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:39:20</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/webpack-note/" class="post-title">
-    webpack note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:28:26</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/es6/" class="post-title">
-    es6 及部分javascript用法
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 16:55:40</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/vue-note/" class="post-title">
-    vue note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 16:44:51</div>
-</div>
-
-        
-
-      </div>
-
-      <div class="col-md-2 d-md-block d-none  border-left border-secondary">
-        
-<ul class="rightNav d-flex d-md-block flex-wrap">
-
-    
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-primary"
-            href="/hexo/tags/es6/">es6</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-success"
-            href="/hexo/tags/javascript/">javascript</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-danger"
-            href="/hexo/tags/github/">github</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-warning"
-            href="/hexo/tags/hexo/">hexo</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-info"
-            href="/hexo/tags/vue/">vue</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-primary"
-            href="/hexo/tags/%E8%A8%AD%E8%A8%88/">設計</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-success"
-            href="/hexo/tags/webpack/">webpack</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-danger"
-            href="/hexo/tags/canvas/">canvas</a>
-    </li>
-    
-    
-</ul>
-      </div>
     </div>
   </div>
-  <!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 offset-md-1">
-      <ul class="pagination">
-          
-          
-            <li class="next">
-              <a href="/hexo/archives/2019/page/2/">
-                <span>下一頁</span>
-                <span class="symbol-right">&gt;</span>
-              </a>
-            </li>
-          
-      </ul>
-    </div>
-  </div>
-</div>
-
-
+</article>
 </div>
   
   <!-- Footer -->

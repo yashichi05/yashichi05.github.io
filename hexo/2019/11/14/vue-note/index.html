@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="學習筆記"/>
+  <meta property="og:title" content="vue note"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="學習筆記"/>
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:image" content="http://yashichi05.github.io/hexo"/>
   
     <link rel="alternate" href="/atom.xml" title="學習筆記" type="application/atom+xml">
@@ -65,9 +65,8 @@
     <div id="search-result" class="shadow-lg mb-5 bg-white rounded position-absolute"></div>
 </div>
   </div>
-  <!-- Archive Header -->
-<div class="fjax_input">
-  <!-- Page Header -->
+  <div class="fjax_input">
+<!-- Page Header -->
 
 <a href="/hexo/">
 <header class="site-header header-background" style="background-image: url(/hexo//img/default-banner-dark.jpg)">
@@ -75,7 +74,7 @@
     <div class="row">
       <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
         <div class="page-title with-background-image">
-          <p class="title">筆記列表</p>
+          <p class="title">vue note</p>
           <p class="subtitle"></p>
         </div>
         <!-- <div class="site-menu with-background-image">
@@ -88,10 +87,76 @@
   </div>
 </header>
 </a>
-  <!-- Archive List -->
-  <div class="container">
-      <div class="row">
-        <div class="col-12 d-md-none">
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="post-info text-muted">
+          
+          <!-- Date -->
+          <span class="date-time info">於
+            <span class="date">2019-11-14</span>
+            <span class="time">18:04:12</span>
+          </span>
+          
+          <!--  Categories  -->
+          <span class="categories info">分類: 
+
+<a href="/hexo/categories/Framework/">Framework</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <div class="post-tags text-muted">
+          標籤: 
+
+<a class="tag" href="/hexo/tags/vue/">#vue</a>
+
+
+        </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h5 id="vscode-plugin"><a href="#vscode-plugin" class="headerlink" title="vscode plugin"></a>vscode plugin</h5><ul>
+<li>preview on web server</li>
+<li>vue (VSCOD-VUE)</li>
+<li>VUE2 snippets</li>
+</ul>
+<h5 id="建立專案"><a href="#建立專案" class="headerlink" title="建立專案"></a>建立專案</h5><ul>
+<li>npm install vue-cli -g</li>
+<li>vue init webpack 專案名稱</li>
+<li>cd 專案名稱<a id="more"></a>
+
+</li>
+</ul>
+<p>npm run dev //開始編譯<br>npm install 安裝所需檔案</p>
+<h5 id="使用pug-及sass"><a href="#使用pug-及sass" class="headerlink" title="使用pug 及sass"></a>使用pug 及sass</h5><ul>
+<li>npm install pug pug-loader pug-filters –save</li>
+<li>npm install sass <a href="mailto:sass-loader@7.0.0" target="_blank" rel="noopener">sass-loader@7.0.0</a> node-sass –save (sass 報錯需安裝舊版sassloader )<h6 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h6><pre><code>&lt;template lang=&quot;pug&quot;&gt;&lt;/template&gt;
+&lt;style lang=&quot;sass&quot;&gt;&lt;/style&gt;</code></pre></li>
+</ul>
+<h5 id="vue-結構"><a href="#vue-結構" class="headerlink" title="vue 結構"></a>vue 結構</h5><p><img src="https://i.imgur.com/9qKguvR.png" alt=""><br><img src="https://i.imgur.com/bXrNaN0.png" alt=""></p>
+<h5 id="事件修飾符"><a href="#事件修飾符" class="headerlink" title="事件修飾符"></a>事件修飾符</h5><blockquote>
+<p>v-on:click=”def.prevent”<br>:class=”{‘加入的class’:判斷式(true or false 可導入function 或 vue 變數)}”<br>class 切換 可物件化</p>
+<p>:style=”{backgroundColor: ‘red’}”</p>
+<p>變動vue data 內部 array 需用 vue.set(this.arrayData,0,’array data’)</p>
+</blockquote>
+<h5 id="input"><a href="#input" class="headerlink" title="input"></a>input</h5><blockquote>
+<p><a href="https://vuejs.org/v2/guide/forms.html#Checkbox-1" target="_blank" rel="noopener">https://vuejs.org/v2/guide/forms.html#Checkbox-1</a><br>控制 true時的值為<br>v-model=”prdtemp.is_enabled” true-value=”1” false-value=”0” type=’checkbox’</p>
+</blockquote>
+<h3 id="validate"><a href="#validate" class="headerlink" title="validate"></a>validate</h3><blockquote>
+<p>阻止表單位填寫送出，表單驗證資料<br>npm install vee–validate –save</p>
+</blockquote>
+<h5 id="vue-router-傳遞參數"><a href="#vue-router-傳遞參數" class="headerlink" title="vue router 傳遞參數"></a>vue router 傳遞參數</h5><blockquote>
+<p><a href="https://router.vuejs.org/guide/essentials/navigation.html#router-push-location-oncomplete-onabort" target="_blank" rel="noopener">https://router.vuejs.org/guide/essentials/navigation.html#router-push-location-oncomplete-onabort</a></p>
+</blockquote>
+
+        </div>
+      </div>
+      
+      <div class="col-md-2  border-left border-secondary">
           
 <ul class="rightNav d-flex d-md-block flex-wrap">
 
@@ -140,164 +205,9 @@
     
 </ul>
         </div>
-      </div>
-    <div class="row">
-      <div class="col-md-10">
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/javascript-note/" class="post-title">
-    javascript note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:50:09</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/js-%E7%89%A9%E4%BB%B6/" class="post-title">
-    js 物件
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:47:57</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/sass-note/" class="post-title">
-    sass note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:43:51</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/velocity-note/" class="post-title">
-    velocity note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:40:35</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/jquery-note/" class="post-title">
-    jquery note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:40:11</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/bootstrap-%E5%B8%B8%E7%94%A8class/" class="post-title">
-    bootstrap 常用class
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:39:38</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/css/" class="post-title">
-    css
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:39:20</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/webpack-note/" class="post-title">
-    webpack note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 17:28:26</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/es6/" class="post-title">
-    es6 及部分javascript用法
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 16:55:40</div>
-</div>
-
-        
-        <div class="archive-item">
-  <a href="/hexo/2019/11/14/vue-note/" class="post-title">
-    vue note
-  </a>
-  <div class="date text-muted">Posted on 2019-11-14 16:44:51</div>
-</div>
-
-        
-
-      </div>
-
-      <div class="col-md-2 d-md-block d-none  border-left border-secondary">
-        
-<ul class="rightNav d-flex d-md-block flex-wrap">
-
-    
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-primary"
-            href="/hexo/tags/es6/">es6</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-success"
-            href="/hexo/tags/javascript/">javascript</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-danger"
-            href="/hexo/tags/github/">github</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-warning"
-            href="/hexo/tags/hexo/">hexo</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-info"
-            href="/hexo/tags/vue/">vue</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-primary"
-            href="/hexo/tags/%E8%A8%AD%E8%A8%88/">設計</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-success"
-            href="/hexo/tags/webpack/">webpack</a>
-    </li>
-    
-    <li class="text-right mb-2 mr-1">
-        <a class="btn btn-outline-danger"
-            href="/hexo/tags/canvas/">canvas</a>
-    </li>
-    
-    
-</ul>
-      </div>
     </div>
   </div>
-  <!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 offset-md-1">
-      <ul class="pagination">
-          
-          
-            <li class="next">
-              <a href="/hexo/archives/2019/page/2/">
-                <span>下一頁</span>
-                <span class="symbol-right">&gt;</span>
-              </a>
-            </li>
-          
-      </ul>
-    </div>
-  </div>
-</div>
-
-
+</article>
 </div>
   
   <!-- Footer -->

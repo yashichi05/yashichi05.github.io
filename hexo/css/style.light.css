@@ -455,7 +455,7 @@ code {
   padding: 0 0.1875rem;
   margin: 0 0.125rem;
   border-radius: 0.1875rem;
-  background-color: #f0e8df;
+  background-color: $theme-code-background;
 }
 @media only screen and (max-width: 414px) {
   .highlight pre {
@@ -589,6 +589,11 @@ h6 {
   width: 14%;
 }
 .post-item-wrapper .excerpt {
+  padding: 10px;
+  border: 1px dashed #aaa;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-radius: 10px;
   width: 64%;
   margin: 0 4%;
   font-size: 0.875rem;
@@ -736,7 +741,7 @@ footer {
 .pagination > li > a {
   color: #1999ec;
   background-color: #fff;
-  border: 1px solid #1999ec;
+  padding: 10px;
   border-radius: 0.1875rem;
 }
 .pagination > li > a:hover {

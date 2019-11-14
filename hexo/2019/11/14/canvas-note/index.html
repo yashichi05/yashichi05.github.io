@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<!-- Html Head Tag-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="canvas note"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="學習筆記"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yashichi05.github.io/hexo"/>
+  
+    <link rel="alternate" href="/atom.xml" title="學習筆記" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>學習筆記</title>
+
+
+  
+    <!-- 進度條 -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src='https://unpkg.com/nprogress@0.2.0/nprogress.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js'></script>
+  <link rel='stylesheet' href='https://unpkg.com/nprogress@0.2.0/nprogress.css'/>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/hexo/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/hexo/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+<body>
+  <div id="layout_search" class="position-absolute">
+  <div id="search-tool">
+    <div class="search-header mb-4">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+            <input class="form-control" autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋"
+                spellcheck="false" type="text" id="search-input">
+        </div>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+    </div>
+    <div id="search-result" class="shadow-lg mb-5 bg-white rounded position-absolute"></div>
+</div>
+  </div>
+  <div class="fjax_input">
+<!-- Page Header -->
+
+<a href="/hexo/">
+<header class="site-header header-background" style="background-image: url(/hexo//img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <div class="page-title with-background-image">
+          <p class="title">canvas note</p>
+          <p class="subtitle"></p>
+        </div>
+        <!-- <div class="site-menu with-background-image">
+          <ul>
+            
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</header>
+</a>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="post-info text-muted">
+          
+          <!-- Date -->
+          <span class="date-time info">於
+            <span class="date">2019-11-14</span>
+            <span class="time">18:04:12</span>
+          </span>
+          
+          <!--  Categories  -->
+          <span class="categories info">分類: 
+
+<a href="/hexo/categories/language/">language</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <div class="post-tags text-muted">
+          標籤: 
+
+<a class="tag" href="/hexo/tags/canvas/">#canvas</a>
+
+
+        </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <blockquote>
+<p>canvas 類似一張一張圖蓋上疊加<br>若背景沒有填滿的情況向下會呈現透明，類似殘影</p>
+</blockquote>
+<a id="more"></a>
+
+<hr>
+<pre><code>//常用指令
+ctx.clearRect(0,0,400,400)
+ctx.moveTo(pos,0)
+ctx.beginPath()
+ctx.lineTo(pos,400)
+ctx.closePath()
+ctx.moveTo(pos,400)
+ctx.fillText(“pos”,pos,10)
+ctx.strokeStyle= &quot;rgba(0,0,0,0.1)&quot;
+ctx.stroke()
+ctx.lineWidth = 2
+ctx.fillStyle= &quot;red&quot;
+ctx.strokeRect(300,300,50,50)
+ctx.fillRect(300,300,50,50)
+ctx.arc(0,350,5,0,Math.PI*2)
+ctx.fill()
+ctx.save();
+ctx.restore();
+ctx.rotate(time/10)</code></pre><h5 id="template1"><a href="#template1" class="headerlink" title="template1"></a>template1</h5><pre><code>var canvas = document.getElementById(&quot;firstcanvas&quot;) //指定canvas 標籤
+var ctx = canvas.getContext(&quot;2d&quot;)  //2d物件
+
+canvas.width = 400 //座標有 400 個px單位
+canvas.height= 400
+
+// ctx.fillStyle=&quot;red&quot;
+// ctx.strokeStyle=&quot;blue&quot;
+// ctx.strokeRect(100,100,200,200)
+// ctx.fillRect(300,300,100,100)
+
+
+// ctx.beginPath()
+// ctx.moveTo(100,100)
+// ctx.lineTo(300,100)
+// ctx.lineTo(300,200)
+// ctx.lineTo(100,300)
+// ctx.closePath()
+// ctx.rect(300,300,50,50)
+// ctx.fill()
+
+
+// ctx.beginPath()
+// ctx.arc(200,200,100,0,2*Math.PI)
+// ctx.fill()
+var time = 0
+function draw(){
+time++
+ctx.clearRect(0,0,400,400)//清除方形
+//會有殘影效果
+//ctx.fillStyle = &quot;rgba(255,255,255,0.2)&quot; 
+//填充顏色 白色 有透明度
+//ctx.fillRect(0,0,400,400) 
+//填滿整個區域 
+ctx.beginPath()//開始新繪製
+for(var i = 0;i&lt;10;i++){
+    let pos = i*50
+    ctx.moveTo(pos,0) //指定點
+    ctx.lineTo(pos,400) //連線
+    ctx.fillText(pos,pos,10) //填入文字
+    ctx.moveTo(0,pos)
+    ctx.lineTo(400,pos)
+    ctx.fillText(pos,10,pos)
+
+}
+ctx.strokeStyle= &quot;rgba(0,0,0,0.1)&quot;
+ctx.stroke()
+
+ctx.beginPath()
+ctx.moveTo(25,350)
+ctx.lineTo(375,350)
+ctx.lineWidth = 2
+ctx.strokeStyle= &quot;black&quot;
+ctx.stroke()
+
+ctx.fillStyle= &quot;red&quot;
+ctx.fillRect(300,300,50,50)
+ctx.strokeRect(300,300,50,50)
+
+ctx.beginPath()
+    ctx.rect(250,250,50,100)
+    ctx.rect(50,300,50,50)
+ctx.fillStyle= &quot;yellow&quot;
+ctx.fill()
+ctx.stroke()
+
+
+ctx.beginPath()
+    ctx.rect(100,250,50,100)
+    ctx.rect(200,250,50,100)
+ctx.fillStyle= &quot;orange&quot;
+ctx.fill()
+ctx.stroke()
+
+ctx.beginPath()
+    ctx.moveTo(100,200)
+    ctx.lineTo(250,200)
+    ctx.lineTo(250,250)
+    ctx.lineTo(200,250)
+    ctx.arc(175,250,25,Math.PI*2,Math.PI,true)
+    ctx.lineTo(100,250)
+    ctx.closePath()
+ctx.fillStyle=&quot;white&quot;
+ctx.fill()
+ctx.stroke()
+
+ctx.beginPath()
+    ctx.moveTo(100,200)
+    ctx.lineTo(175,150)
+    ctx.lineTo(250,200)
+    ctx.closePath()
+ctx.fillStyle=&quot;red&quot;
+ctx.fill()
+ctx.stroke()
+
+//flag
+ctx.beginPath()
+    ctx.moveTo(175,150)
+    ctx.lineTo(175,130-mouse.y/5)
+    ctx.lineTo(200,140-(time%5)-mouse.y/5)
+    ctx.lineTo(175,150-mouse.y/5)
+    ctx.closePath()
+ctx.fillStyle=&quot;hsl(&quot;+(mouse.x%360)+&quot;,50%,50%)&quot;
+ctx.fill()
+ctx.stroke()
+//car
+let carx = time%440 -40 ///??????
+
+ctx.fillStyle=&quot;white&quot;
+ctx.strokeRect(carx,325,50,25)
+ctx.fillRect(carx,325,50,25)
+ctx.beginPath()
+    ctx.arc(carx+10,350,5,0,Math.PI*2)
+    ctx.arc(carx+30,350,5,0,Math.PI*2)
+ctx.fillStyle=&quot;black&quot;
+ctx.fill()
+ctx.stroke()
+
+ctx.beginPath()
+ctx.arc(mouse.x,mouse.y,5,0,Math.PI*2)
+ctx.fillStyle = &quot;black&quot;
+ctx.fill()
+
+}
+
+setInterval(draw,30)
+//draw()
+
+
+
+var mouse = {x:0,y:0}
+canvas.addEventListener(&quot;mousemove&quot;,function(evt){
+mouse.x = evt.offsetX
+mouse.y = evt.offsetY
+})</code></pre><h5 id="template2"><a href="#template2" class="headerlink" title="template2"></a>template2</h5><pre><code>var canvas = document.getElementById(&quot;canvasdiv&quot;);
+var ctx = canvas.getContext(&quot;2d&quot;);
+var blockWidth = 200;
+const PI = Math.PI;
+const PI2 = Math.PI * 2;
+
+canvas.width = blockWidth * 3; ///&gt;???
+canvas.height = blockWidth * 3;
+ctx.fillCircle = function(x,y,r){
+this.beginPath()
+this.arc(x,y,r,0,PI2)
+this.fill()
+
+}
+var color = {
+red: &quot;#F74456&quot;,
+white: &quot;#fff&quot;,
+yellow: &quot;#F1DA56&quot;,
+blue: &quot;#036FAF&quot;
+};
+
+function drawBlock(pos, bg, draw, time) {
+ctx.save();
+ctx.translate(pos.x * blockWidth, pos.y * blockWidth);
+ctx.fillStyle = bg;
+ctx.fillRect(0, 0, blockWidth, blockWidth);//建立方塊
+ctx.translate(100, 100);//座標移到方況的中間
+draw(); //執行內部繪畫 function
+ctx.restore();//復原座標
+}
+// drawBlock({x:0,y:0},color.blue,function(){
+//   ctx.beginPath()
+//   ctx.arc(0,0,30,0,PI2)
+//   ctx.fillStyle=&quot;white&quot;
+//   ctx.fill()
+// },0)
+
+var time = 0; //執行次數
+// 他在哪銷出原本的影格???
+function draw() {
+time++;
+let stime = parseInt(time / 20); //slow time 慢20倍的計次
+//建立第一個方塊
+drawBlock(
+    { x: 0, y: 0 },
+    color.blue,
+    function() {
+    ctx.beginPath();
+    ctx.arc(0, 0, 30 / (stime % 3 + 1), 0, PI2);
+    ctx.strokeStyle = &quot;white&quot;;
+    ctx.lineWidth = 15;
+    ctx.stroke();
+    for (var i = 0; i &lt; 8; i++) {
+        ctx.fillStyle = stime % 8 == i ? color.red : &quot;white&quot;;
+        if ((i + stime) % 4 != 0) {
+        ctx.fillRect(60, -4, 20, 8);
+        }
+        ctx.rotate(PI2 / 8); //連續改變座標
+    }
+    },
+    time
+);
+drawBlock(
+    { x: 1, y: 0 },
+    color.red,
+    function() {
+    ctx.save();
+    ctx.scale(0.8, 0.8);
+    ctx.translate(-60, -60);
+    for (var i = 0; i &lt; 3; i++) {
+        ctx.save();
+        for (var o = 0; o &lt; 3; o++) {
+        ctx.beginPath();
+        ctx.arc(0, 0, 20, 0, PI2);
+        ctx.fillStyle = color.white;
+        if ((i + o * 2 + stime) % 5 == 0) {
+            ctx.fillStyle = color.yellow;
+        }
+        ctx.fill();
+        ctx.translate(0, 60);
+        }
+        ctx.restore();
+        ctx.translate(60, 0);
+    }
+
+    ctx.restore();
+    },
+    time
+);
+drawBlock({ x: 2, y: 0 }, color.yellow, function() {
+    for (var i = 0; i &lt; 4; i++) {
+    ctx.beginPath()
+    ctx.moveTo(0,0)
+    ctx.lineTo(80,20)
+    ctx.lineTo(80,80)
+    ctx.closePath()
+    ctx.fillStyle=&quot;white&quot;
+    ctx.fill()
+    if(stime%4 ==i){
+        ctx.beginPath()
+        ctx.arc(60,40,6,0,PI2)
+        ctx.fillStyle = color.red
+        ctx.fill()
+        }
+    ctx.rotate(PI/2)
+    }
+
+}, time);
+drawBlock({ x: 0, y: 1 }, color.yellow, function() {
+    ctx.translate(-60,-60)
+    ctx.fillStyle = color.white
+    ctx.fillRect(0,0,60,60)
+    ctx.translate(30,30)
+    ctx.rotate(-PI/4)
+    ctx.beginPath()
+    ctx.moveTo(0,0)
+    ctx.lineTo(40,0)
+    ctx.arc(40,40,40,-PI/2,PI/2)
+    ctx.lineTo(0,80)
+    ctx.closePath()
+    ctx.fillStyle = color.red
+    ctx.fill()
+
+    ctx.translate(-100+10*Math.sin(time/10),60)
+    ctx.fillStyle = color.blue
+    ctx.fillRect(0,0,100,40)
+
+    ctx.translate(100+10*Math.cos(time/10),40)
+    ctx.fillStyle = color.white
+    ctx.fillRect(0,0,50,20)
+
+}, time);
+drawBlock({ x: 1, y: 1 }, color.white, function() {
+    ctx.beginPath()
+    ctx.fillStyle = color.red
+    let angle1 = (time%100)/100*PI2
+    let angle2 = (time%50)/50*PI2
+    ctx.moveTo(0,0)
+    ctx.arc(0,0,80,angle1,angle2)
+    ctx.fill()
+    ctx.fillStyle = color.yellow
+    ctx.fillCircle(60,60,30)
+}, time);
+drawBlock({ x: 2, y: 1 }, color.blue, function() {
+    ctx.fillStyle = color.white
+    ctx.fillCircle(0,0,80)
+    ctx.rotate(time/10)
+    ctx.fillStyle = color.red
+    ctx.fillCircle(-30,0,20)
+    ctx.rotate(time/10)
+    ctx.fillStyle = color.yellow
+    ctx.fillCircle(40,0,50)
+}, time);
+drawBlock({ x: 0, y: 2 }, color.red, function() {
+    ctx.rotate(time/100)
+    for (var i =0;i&lt;8;i++){
+    ctx.rotate(PI2/8)
+    ctx.fillStyle = color.white
+    let r = 16
+    if((stime+i)%4&lt;2){
+        r = 10
+
+    }
+    ctx.fillCircle(60,0,r)
+    ctx.fillStyle = color.blue
+    ctx.fillCircle(30,5,5)
+
+    }
+
+}, time);
+drawBlock({ x: 1, y: 2 }, color.blue, function() {
+    ctx.translate(-80,-100)
+    ctx.fillStyle=color.yellow
+    ctx.fillRect(0,time%200,40,time%200)
+
+    ctx.translate(40,40)
+    ctx.fillStyle = color.red
+    ctx.fillRect(0,0,120,80)
+    ctx.fillStyle = color.white
+    ctx.fillCircle(0,40,stime%20)
+    ctx.fillCircle(70,40,stime%10)
+    ctx.translate(70,80)
+    ctx.fillRect(0,0,50,80)
+}, time);
+drawBlock({ x: 2, y: 2 }, color.yellow, function() {
+    ctx.beginPath()
+    ctx.moveTo(-100,-100)
+    ctx.lineTo(0,-100)
+    ctx.lineTo(-100,100)
+    ctx.closePath()
+    ctx.fillStyle = color.white
+    ctx.fill()
+
+    ctx.rotate(PI)
+
+    ctx.save()
+    ctx.translate(time%100,0)
+    ctx.beginPath()
+    ctx.moveTo(-100,-100)
+    ctx.lineTo(0,-100)
+    ctx.lineTo(-100,100)
+    ctx.closePath()
+    ctx.fillStyle = color.red
+    ctx.fill()
+    ctx.restore()
+
+    //????
+    ctx.beginPath()
+    ctx.moveTo(-100,-100)
+    ctx.lineTo(0,-100)
+    ctx.lineTo(-100,100)
+    ctx.closePath()
+    ctx.fillStyle = color.white
+    ctx.fill()
+}, time);
+requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);</code></pre>
+        </div>
+      </div>
+      
+      <div class="col-md-2  border-left border-secondary">
+          
+<ul class="rightNav d-flex d-md-block flex-wrap">
+
+    
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-primary"
+            href="/hexo/tags/es6/">es6</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-success"
+            href="/hexo/tags/javascript/">javascript</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-danger"
+            href="/hexo/tags/github/">github</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-warning"
+            href="/hexo/tags/hexo/">hexo</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-info"
+            href="/hexo/tags/vue/">vue</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-primary"
+            href="/hexo/tags/%E8%A8%AD%E8%A8%88/">設計</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-success"
+            href="/hexo/tags/webpack/">webpack</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-danger"
+            href="/hexo/tags/canvas/">canvas</a>
+    </li>
+    
+    
+</ul>
+        </div>
+    </div>
+  </div>
+</article>
+</div>
+  
+  <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <p class="copyright text-muted">
+          <!-- Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a> -->
+          
+          <p>GitHub:<a target="_blank" href="https://github.com/yashichi05">https://github.com/yashichi05</a></p>
+          <p class="copyright text-muted">
+              <a target="_blank" href="https://hexo.io/">Hexo.</a> 框架製作
+            </p>
+        </div>
+    </div>
+  </div>
+
+
+
+</footer>
+  <!-- After Footer Scripts -->
+<script src="/hexo/js/highlight.pack.js"></script>
+<script src="/hexo/js/bootstrap.min.js"></script>
+<script src="/hexo/js/cus.js"></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+  var CONFIG = {localsearch:JSON.parse('{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}'),
+    path:"search.json",
+    root:"/hexo/"}
+</script>
+
+
+</body>
+
+</html>

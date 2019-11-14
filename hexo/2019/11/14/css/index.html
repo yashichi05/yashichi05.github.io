@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<!-- Html Head Tag-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="css"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="學習筆記"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yashichi05.github.io/hexo"/>
+  
+    <link rel="alternate" href="/atom.xml" title="學習筆記" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>學習筆記</title>
+
+
+  
+    <!-- 進度條 -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src='https://unpkg.com/nprogress@0.2.0/nprogress.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js'></script>
+  <link rel='stylesheet' href='https://unpkg.com/nprogress@0.2.0/nprogress.css'/>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/hexo/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/hexo/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+<body>
+  <div id="layout_search" class="position-absolute">
+  <div id="search-tool">
+    <div class="search-header mb-4">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+            <input class="form-control" autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜尋"
+                spellcheck="false" type="text" id="search-input">
+        </div>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+    </div>
+    <div id="search-result" class="shadow-lg mb-5 bg-white rounded position-absolute"></div>
+</div>
+  </div>
+  <div class="fjax_input">
+<!-- Page Header -->
+
+<a href="/hexo/">
+<header class="site-header header-background" style="background-image: url(/hexo//img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <div class="page-title with-background-image">
+          <p class="title">css</p>
+          <p class="subtitle"></p>
+        </div>
+        <!-- <div class="site-menu with-background-image">
+          <ul>
+            
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</header>
+</a>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="post-info text-muted">
+          
+          <!-- Date -->
+          <span class="date-time info">於
+            <span class="date">2019-11-14</span>
+            <span class="time">18:04:12</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h5 id="CSS-濾鏡-模糊"><a href="#CSS-濾鏡-模糊" class="headerlink" title="CSS 濾鏡 模糊"></a>CSS 濾鏡 模糊</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">filter</span>: <span class="selector-tag">blur</span>(3<span class="selector-tag">px</span>);</span><br></pre></td></tr></table></figure>
+<h5 id="div自動橫向排列"><a href="#div自動橫向排列" class="headerlink" title="div自動橫向排列"></a>div自動橫向排列</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">display</span><span class="selector-pseudo">:flex</span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="字距"><a href="#字距" class="headerlink" title="字距"></a>字距</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">letter-spacing</span>: 3<span class="selector-tag">px</span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="全部向上對齊-原本是-y-0-這條線置中"><a href="#全部向上對齊-原本是-y-0-這條線置中" class="headerlink" title="全部向上對齊(原本是 y=0 這條線置中)"></a>全部向上對齊(原本是 y=0 這條線置中)</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line"><span class="attribute">vertical-align</span>:top;</span><br><span class="line"><span class="attribute">vertical-align</span>:inital;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="display效果-block向外撐滿-inline向內部縮排、自動橫向排列"><a href="#display效果-block向外撐滿-inline向內部縮排、自動橫向排列" class="headerlink" title="display效果 block向外撐滿 inline向內部縮排、自動橫向排列"></a>display效果 block向外撐滿 inline向內部縮排、自動橫向排列</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">display</span><span class="selector-pseudo">:block</span>;</span><br><span class="line"><span class="selector-tag">display</span><span class="selector-pseudo">:inline-block</span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="overflow-hidden-超出範圍隱藏"><a href="#overflow-hidden-超出範圍隱藏" class="headerlink" title="overflow:hidden; 超出範圍隱藏"></a>overflow:hidden; 超出範圍隱藏</h5><blockquote>
+<p>如border圓角，背景沒效果時<br>div 包覆 float 元素，會撐開</p>
+</blockquote>
+<h5 id="position"><a href="#position" class="headerlink" title="position"></a>position</h5><blockquote>
+<p>static 不能下left right<br>relative 正常情況下偏移<br>absolute 外框為基準偏移</p>
+</blockquote>
+<h5 id="漸層"><a href="#漸層" class="headerlink" title="漸層"></a>漸層</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">background</span>: <span class="selector-tag">linear-gradient</span>(<span class="selector-tag">transparent</span> 0%,<span class="selector-tag">gray</span> 100%);</span><br><span class="line">//角度</span><br><span class="line"><span class="selector-tag">background</span>: <span class="selector-tag">linear-gradient</span>(10<span class="selector-tag">deg</span>,<span class="selector-tag">transparent</span> 0%,<span class="selector-tag">gray</span> 100%);</span><br></pre></td></tr></table></figure>
+
+<h5 id="div-width-100-padding後會超出父元素-，避免超出父元素"><a href="#div-width-100-padding後會超出父元素-，避免超出父元素" class="headerlink" title="div width:100%  padding後會超出父元素 ，避免超出父元素"></a>div width:100%  padding後會超出父元素 ，避免超出父元素</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">box-sizing</span><span class="selector-pseudo">:border-box</span>;</span><br></pre></td></tr></table></figure>
+<h5 id="陰影-水平偏移-垂直偏移，模糊範圍，顏色"><a href="#陰影-水平偏移-垂直偏移，模糊範圍，顏色" class="headerlink" title="陰影(水平偏移,垂直偏移，模糊範圍，顏色)"></a>陰影(水平偏移,垂直偏移，模糊範圍，顏色)</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">box-shadow</span><span class="selector-pseudo">:0px</span> 0<span class="selector-tag">px</span> 35<span class="selector-tag">px</span> <span class="selector-tag">rgba</span>(0,0,0,0<span class="selector-class">.3</span>);</span><br></pre></td></tr></table></figure>
+<h5 id="轉變過渡時間-漸變"><a href="#轉變過渡時間-漸變" class="headerlink" title="轉變過渡時間 漸變"></a>轉變過渡時間 漸變</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transition</span><span class="selector-pseudo">:0.5s</span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="flex下-置中手段"><a href="#flex下-置中手段" class="headerlink" title="flex下 置中手段"></a>flex下 置中手段</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">justify-content</span><span class="selector-pseudo">:center</span>; </span><br><span class="line"><span class="selector-tag">align-items</span><span class="selector-pseudo">:center</span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="flex-排向"><a href="#flex-排向" class="headerlink" title="flex 排向"></a>flex 排向</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">flex-direction</span><span class="selector-pseudo">:row</span>;</span><br><span class="line"><span class="selector-tag">flex-direction</span><span class="selector-pseudo">:column</span>;</span><br><span class="line"><span class="selector-tag">flex-direction</span><span class="selector-pseudo">:row-reverse</span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="justify-主軸對齊方式-align-副軸"><a href="#justify-主軸對齊方式-align-副軸" class="headerlink" title="justify 主軸對齊方式 align 副軸"></a>justify 主軸對齊方式 align 副軸</h5><blockquote>
+<p>flex-direction:row; 主軸是x=0<br><img src="https://i.imgur.com/bYe01r3.png" alt=""><br><img src="https://i.imgur.com/b1rHUnI.png" alt=""></p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">justify-content</span><span class="selector-pseudo">:flex-start</span>;</span><br><span class="line"><span class="selector-tag">align-items</span><span class="selector-pseudo">:flex-start</span>;</span><br></pre></td></tr></table></figure>
+<h5 id="flex-排版比例"><a href="#flex-排版比例" class="headerlink" title="flex 排版比例"></a>flex 排版比例</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">flex</span><span class="selector-pseudo">:6</span>;</span><br><span class="line"><span class="selector-tag">flex</span><span class="selector-pseudo">:230px</span>;</span><br></pre></td></tr></table></figure>
+<h5 id="flex-伸縮限制"><a href="#flex-伸縮限制" class="headerlink" title="flex 伸縮限制"></a>flex 伸縮限制</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">flex-shrink</span><span class="selector-pseudo">:100px</span>;</span><br><span class="line"><span class="selector-tag">flex-grow</span><span class="selector-pseudo">:100px</span>;</span><br></pre></td></tr></table></figure>
+<h5 id="position-absolute-會自動定位最近的-relative的父輩成員"><a href="#position-absolute-會自動定位最近的-relative的父輩成員" class="headerlink" title="position:absolute; 會自動定位最近的 relative的父輩成員"></a>position:absolute; 會自動定位最近的 relative的父輩成員</h5><h5 id="div-a-nth-child-4-div-底下的-第四個-a-標籤"><a href="#div-a-nth-child-4-div-底下的-第四個-a-標籤" class="headerlink" title="div a:nth-child(4){} div 底下的 第四個 a 標籤"></a>div a:nth-child(4){} div 底下的 第四個 a 標籤</h5><h5 id="flex-換行"><a href="#flex-換行" class="headerlink" title="flex 換行"></a>flex 換行</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">flex-wrap</span><span class="selector-pseudo">:wrap</span>;</span><br></pre></td></tr></table></figure>
+<h5 id="物件尾端及前端插入顏色或背景"><a href="#物件尾端及前端插入顏色或背景" class="headerlink" title="物件尾端及前端插入顏色或背景"></a>物件尾端及前端插入顏色或背景</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h2</span><span class="selector-pseudo">::before</span>&#123;<span class="attribute">content</span>:<span class="string">"文字"</span>;&#125;</span><br><span class="line"><span class="selector-tag">h2</span><span class="selector-pseudo">::after</span>&#123;<span class="attribute">content</span>:<span class="string">""</span>;&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="自動計算"><a href="#自動計算" class="headerlink" title="自動計算"></a>自動計算</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:calc(100</span>%<span class="selector-tag">-20px</span>);</span><br></pre></td></tr></table></figure>
+
+<h5 id="移動距離-50-指物件本身的50"><a href="#移動距離-50-指物件本身的50" class="headerlink" title="移動距離 50%指物件本身的50%"></a>移動距離 50%指物件本身的50%</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">trasform</span><span class="selector-pseudo">:translate(-50</span>%,<span class="selector-tag">-50</span>%)</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="框限會在div"><a href="#框限會在div" class="headerlink" title="框限會在div"></a>框限會在div</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">box-sizing</span><span class="selector-pseudo">:border-box</span>;</span><br></pre></td></tr></table></figure>
+<h5 id="label-建議跟input-放在一起-可聯動-增加可點及範圍"><a href="#label-建議跟input-放在一起-可聯動-增加可點及範圍" class="headerlink" title="label 建議跟input 放在一起 可聯動 增加可點及範圍"></a>label 建議跟input 放在一起 可聯動 增加可點及範圍</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">id 與 for 進行關聯</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"preference"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"cheese"</span>&gt;</span>Do you like cheese?<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"cheese"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">同樣效果</span><br><span class="line">子物件 直接關聯</span><br><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span>Do you like peas?</span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">name</span>=<span class="string">"peas"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="background-背景"><a href="#background-背景" class="headerlink" title="background 背景"></a>background 背景</h5><blockquote>
+<p>background-size: cover 撐滿</p>
+</blockquote>
+<h5 id="css-filter-brightness-100-變亮濾鏡"><a href="#css-filter-brightness-100-變亮濾鏡" class="headerlink" title="css filter: brightness(100%) 變亮濾鏡"></a>css filter: brightness(100%) 變亮濾鏡</h5><h5 id="css-奇偶數選擇-tr-td-even-background-black"><a href="#css-奇偶數選擇-tr-td-even-background-black" class="headerlink" title="css 奇偶數選擇 tr td:even{background: black;}"></a>css 奇偶數選擇 tr td:even{background: black;}</h5>
+        </div>
+      </div>
+      
+      <div class="col-md-2  border-left border-secondary">
+          
+<ul class="rightNav d-flex d-md-block flex-wrap">
+
+    
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-primary"
+            href="/hexo/tags/es6/">es6</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-success"
+            href="/hexo/tags/javascript/">javascript</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-danger"
+            href="/hexo/tags/github/">github</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-warning"
+            href="/hexo/tags/hexo/">hexo</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-info"
+            href="/hexo/tags/vue/">vue</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-primary"
+            href="/hexo/tags/%E8%A8%AD%E8%A8%88/">設計</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-success"
+            href="/hexo/tags/webpack/">webpack</a>
+    </li>
+    
+    <li class="text-right mb-2 mr-1">
+        <a class="btn btn-outline-danger"
+            href="/hexo/tags/canvas/">canvas</a>
+    </li>
+    
+    
+</ul>
+        </div>
+    </div>
+  </div>
+</article>
+</div>
+  
+  <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <p class="copyright text-muted">
+          <!-- Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a> -->
+          
+          <p>GitHub:<a target="_blank" href="https://github.com/yashichi05">https://github.com/yashichi05</a></p>
+          <p class="copyright text-muted">
+              <a target="_blank" href="https://hexo.io/">Hexo.</a> 框架製作
+            </p>
+        </div>
+    </div>
+  </div>
+
+
+
+</footer>
+  <!-- After Footer Scripts -->
+<script src="/hexo/js/highlight.pack.js"></script>
+<script src="/hexo/js/bootstrap.min.js"></script>
+<script src="/hexo/js/cus.js"></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+  var CONFIG = {localsearch:JSON.parse('{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}'),
+    path:"search.json",
+    root:"/hexo/"}
+</script>
+
+
+</body>
+
+</html>
